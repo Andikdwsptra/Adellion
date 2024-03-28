@@ -1,0 +1,333 @@
+
+    /* Media query untuk layar laptop dan desktop */
+@media only screen and (min-width: 992px) {
+  /* Atur tata letak konten untuk layar laptop dan desktop di sini */
+  
+  /* Navbar */
+  .navbar {
+    background-color: #542F9B;
+    position: fixed; /* Tetapkan navbar menjadi fixed */
+    top: 0; /* Letakkan navbar di bagian atas */
+    width: 100%; /* Lebar navbar 100% dari viewport */
+    z-index: 1000; /* Perbaiki penulisan z-index */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+  .icon-baner {
+    width: 40px;
+    border-radius: 100px;
+    margin-bottom: auto;
+  }
+  
+  .navbar-brand {
+    padding-left: 35px;
+    font-size: 30px;
+    font-family: 'Viga', sans-serif;
+  }
+  
+  .navbar-brand img {
+    margin-right: 5px;
+  }
+  
+  .navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px; /* Jarak antara teks menu dan garis bawah */
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px; /* Mulai dengan lebar 0 */
+    height: 2px; /* Tinggi garis bawah */
+    background-color: #fff; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Animasi perubahan lebar garis */
+  }
+
+  .navbar-nav .nav-link.active::after {
+    width: 100%; /* Lebar garis bawah saat aktif */
+  }
+  
+  /* Menyembunyikan garis bawah di tautan non-active */
+  .navbar-nav .nav-link:not(.active)::after {
+    width: 0; /* Lebar garis bawah 0 untuk tautan non-active */
+  }
+
+  /* Tambahkan margin atas pada konten di bawah navbar */
+  .content {
+    margin-top: 70px; /* Sesuaikan dengan tinggi navbar */
+  }
+  
+
+      
+      /* Home */
+      
+      .container-fluid {
+       margin-top: 150px;
+       width: 100%;
+       display: flex;
+       justify-content: cneter;
+       align-items: center;
+       position: relative; /* Membuat posisi relatif untuk konten di dalamnya */
+      min-height: 100vh;
+      }
+      
+     .jumbotron {
+      border-radius: 50px;
+      background-color: #53A05D;
+      width: 100%; /* Atur lebar jumbotron */
+      height: 800px; /* Tinggi jumbotron menyesuaikan konten di dalamnya */
+      margin-top: -50px; /* Padding atas sebesar 50px */
+      margin-bottom: 0px; /* Padding bawah sebesar 30px */
+      margin-left: 10px; /* Padding kiri sebesar 20px */
+      margin-right: 10px;
+      box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.6);
+      }
+
+      .jumbotron .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+      margin-bottom: -65px;
+      }
+    
+     .jumbotron h1{
+     font-family: 'Viga', Sans-Serif;
+     font-size: 5rem;
+     }
+    
+     .jumbotron p {
+     font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:"slnt" 0;
+      font-size: 2rem;
+      }
+      
+    
+      .img-adel {
+      max-width: 100%; /* Maksimum lebar gambar adalah 100% */
+      width: 500px;
+      margin-top: 50px;
+      margin-left: 20px;
+     }
+     
+     /* navbar mini */
+     .col-bg {
+       background-color: #542F9B; /* Warna latar belakang navbar */
+       display: flex;
+       justify-content: center; /* Memposisikan konten di tengah */
+       align-items: center;
+       position: absolute; /* Mengatur posisi absolut */
+       top: 88%; /* Posisi vertikal di tengah */
+       left: 50%; /* Posisi horizontal di tengah */
+       transform: translate(-50%, -50%);
+       width: auto;
+       border-radius: 30px;
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+     }
+     
+     .c-white {
+      color: white !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     }
+     
+     .i-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     }
+     
+     .ri-icon {
+      font-size: 40px; /* Atur ukuran ikon sesuai kebutuhan */
+      margin-right: 5px;
+     }
+     
+     .text {
+      margin-top: 5px;
+      font-size: 25px;
+     }
+     
+     /* End Home */
+     
+     /* Profile */
+     .profile {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+    .profile-img img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    
+    .profile-info {
+      max-width: 600px;
+    }
+    
+    .profile-info h2 {
+      margin-bottom: 20px;
+    }
+    
+    .profile-info p {
+      margin-bottom: 10px;
+    }
+
+}
+
+      /* Media query untuk layar handphone dan tablet */
+      @media only screen and (max-width: 991px) {
+      /* utility */
+      h1 {
+      font-family: 'viga', Sans-Serif;
+     }
+     
+     .navbar-brand {
+      font-family: 'viga', Sans-Serif;
+      font-size: 50px;
+      padding-right: 20px;
+     }
+     
+     p {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:"slnt" 0;
+     }
+ 
+     /* Navbar */
+      .navbar {
+       background-color: #542F9B;
+       position: fixed; /* Tetapkan navbar menjadi fixed */
+       top: 0; /* Letakkan navbar di bagian atas */
+       width: 100%; /* Lebar navbar 100% dari viewport */
+       z-index: 1000; /* Perbaiki penulisan z-index */
+       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+      }
+
+      .nav-link {
+       font-size: 20px;
+      }
+      .icon-baner {
+       width: 40px;
+       border-radius: 100px;
+       margin-bottom: auto;
+      }
+      
+      .navbar-brand {
+      padding-left: 5px;
+      font-size: 30px;
+      font-family: 'Viga', sans-serif;
+     }
+     
+     /* Home */
+     .jumbotron {
+     background-color: #53A05D;
+     width: 100%;
+     height: 100vh;
+     margin-top: 100px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+     }
+     
+      .img-adel {
+      max-width: 100%; /* Maksimum lebar gambar adalah 100% */
+      width: 500px;
+      margin-bottom: -50px;
+      padding-top: 114px;
+     }
+     
+     .jumbotron h1 {
+      padding-top: 50px;
+      margin-left: -50px;
+     }
+     
+     .jumbotron p {
+      margin-left: -50px;
+     }
+     
+     /* Navbar Mini */
+     .col-bg {
+    position: fixed;
+    bottom: -2%;
+    width: 100%;
+    right: 0%;
+    background-color: #542F9B; /* Ubah warna latar belakang sesuai kebutuhan */
+    padding: 10px; /* Atur padding sesuai kebutuhan */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan bawah */
+    z-index: 1000; /* Pastikan z-index lebih tinggi dari konten lainnya */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .col-bg .text {
+   display: none;
+  }
+  
+  .col-bg .nav-link {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur ikon menjadi 3 baris */
+    justify-content: space-around; /* Mengatur jarak antara ikon */
+    align-items: center; /* Mengatur posisi ikon di tengah vertikal */
+  }
+
+  .ri-icon {
+    font-size: 30px; /* Atur ukuran ikon */
+    color: white;
+  }
+  
+  .cal {
+   margin-right: 50px;
+   margin-left: 27px;
+   margin-top: -10px;
+  }
+  
+  .gal {
+   margin-right: 50px;
+   margin-left: 30px;
+   margin-top: -10px;
+  }
+  
+  .sho {
+   margin-left: 30px;
+   margin-top: -10px;
+  }
+  
+  /* Profile */
+     .profile {
+      margin-top: 50px;
+    }
+    
+    .profile-img img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .profile-info {
+      max-width: 600px;
+    }
+    
+    .profile-info h2 {
+      margin-bottom: 20px;
+    }
+    
+    .profile-info p {
+      margin-bottom: 10px;
+    }
+
+}
